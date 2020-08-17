@@ -12,18 +12,29 @@
     "libphonenumber-js": "^1.7.56",
     "material-ui": "^0.20.2",
     "react": "^16.13.1",
+    "react-confetti": "^6.0.0",
     "react-dom": "^16.13.1",
     "react-dropzone": "^11.0.3",
     "react-hook-form": "^6.4.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "sweetalert2": "^9.17.1",
     "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "morgan": "^1.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:server": "node ./server.js",
+    "dev": "concurrently --kill-others \"npm run start:server\" \"npm run start\""
   },
   "eslintConfig": {
     "extends": "react-app"

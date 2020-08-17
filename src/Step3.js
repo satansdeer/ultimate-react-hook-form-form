@@ -18,9 +18,8 @@ export const Step3 = () => {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
-    setValues(data);
     history.push("./result");
+    setValues(data);
   };
 
   return (

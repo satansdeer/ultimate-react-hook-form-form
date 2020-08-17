@@ -47,8 +47,8 @@ export const Step2 = () => {
   const hasPhone = watch("hasPhone");
 
   const onSubmit = (data) => {
-    setValues(data);
     history.push("./step3");
+    setValues(data);
   };
 
   return (
@@ -70,7 +70,7 @@ export const Step2 = () => {
 
         <FormControlLabel
           control={
-            <Checkbox defaultValue={hasPhone} defaultChecked={hasPhone} color="primary" inputRef={register} name="hasPhone" />
+            <Checkbox defaultValue={data.hasPhone} defaultChecked={data.hasPhone} color="primary" inputRef={register} name="hasPhone" />
           }
           label="Do you have a phone"
         />
