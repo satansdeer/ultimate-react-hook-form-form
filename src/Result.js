@@ -54,8 +54,8 @@ export const Result = () => {
       body: formData,
     });
 
-    if (res.status == 200) {
-      Swal.fire("Good job!", "You've passed the challenge!", "success");
+    if (res.status === 200) {
+      Swal.fire("Great job!", "You've passed the challenge!", "success");
       setSuccess(true);
     }
   };
