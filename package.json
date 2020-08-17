@@ -3,12 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hookform/resolvers": "^0.1.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "libphonenumber-js": "^1.7.56",
+    "material-ui": "^0.20.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-dropzone": "^11.0.3",
+    "react-hook-form": "^6.4.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "yup": "^0.29.3"
   },
   "scripts": {
     "start": "react-scripts start",
