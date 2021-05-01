@@ -1,4 +1,4 @@
-<img width="636" alt="Screen_Shot_2021-04-29_at_17 13 16-removebg-preview" src="https://user-images.githubusercontent.com/450319/116574769-54aa1100-a90e-11eb-8e22-77e5cdec6d6c.png">
+<img alt="Screen_Shot_2021-04-29_at_17 13 16-removebg-preview" src="https://user-images.githubusercontent.com/450319/116574769-54aa1100-a90e-11eb-8e22-77e5cdec6d6c.png">
 
 ---
 
