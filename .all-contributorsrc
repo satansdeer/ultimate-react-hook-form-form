@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Njokosi",
+      "name": "Njokosi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75541922?v=4",
+      "profile": "https://github.com/Njokosi",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ultimate-react-hook-form-form",
+  "projectOwner": "satansdeer",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
