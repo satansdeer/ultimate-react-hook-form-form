@@ -27,7 +27,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Njokosi"><img src="https://avatars.githubusercontent.com/u/75541922?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Njokosi</b></sub></a><br /><a href="https://github.com/satansdeer/ultimate-react-hook-form-form/issues?q=author%3ANjokosi" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="http://maksimivanov.com"><img src="https://avatars.githubusercontent.com/u/450319?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maksim Ivanov</b></sub></a><br /><a href="#maintenance-satansdeer" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://maksimivanov.com"><img src="https://avatars.githubusercontent.com/u/450319?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maksim Ivanov</b></sub></a><br /><a href="#maintenance-satansdeer" title="Maintenance">🚧</a> <a href="https://github.com/satansdeer/ultimate-react-hook-form-form/commits?author=satansdeer" title="Code">💻</a></td>
   </tr>
 </table>
 
