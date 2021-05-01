@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "express-rate-limit": "^5.2.6",
     "libphonenumber-js": "^1.7.56",
     "material-ui": "^0.20.2",
     "react": "^16.13.1",
