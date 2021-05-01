@@ -3,8 +3,14 @@ const fs = require("fs");
 const fileUpload = require("express-fileupload");
 const cors = require("cors");
 const morgan = require("morgan");
+const rateLimit = require("express-rate-limit");
 
 const app = express();
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100 // limit each IP to 100 requests per windowMs
+});
 
 app.use(
   fileUpload({
@@ -17,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
-app.post("/", async (req, res) => {
+app.post("/", limiter, async (req, res) => {
   try {
     if (req.files && req.files.files) {
       [req.files.files].flat().map((file) => {
