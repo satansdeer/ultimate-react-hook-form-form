@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useData } from "./DataContext";
 import Typography from "@material-ui/core/Typography";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers";
+import { yupResolver } from "@hookform/resolvers/yup";
 import { PrimaryButton } from "./components/PrimaryButton";
 import { MainContainer } from "./components/MainContainer";
 import { Form } from "./components/Form";
