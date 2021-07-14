@@ -42,7 +42,7 @@ export const Step1 = () => {
       </Typography>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
-          ref={register}
+          {...register('test', { required: true })}
           id="firstName"
           type="text"
           label="First Name"
@@ -51,7 +51,7 @@ export const Step1 = () => {
           helperText={errors?.firstName?.message}
         />
         <Input
-          ref={register}
+          {...register('test', { required: true })}
           id="lastName"
           type="text"
           label="Last Name"
