@@ -42,7 +42,7 @@ export const Step1 = () => {
       </Typography>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
-          ref={register}
+          {...register('parentName')}
           id="firstName"
           type="text"
           label="First Name"
