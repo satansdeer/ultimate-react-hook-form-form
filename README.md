@@ -6,6 +6,8 @@
 
 ---
 
+This project is currently written for [React Hook Form V6](https://react-hook-form.com/v6/api/).
+
 This is example repo for the [Ultimate React Hook Form Youtube video](https://www.youtube.com/watch?v=U-iz8b4RExA)
 
 The form features include:
