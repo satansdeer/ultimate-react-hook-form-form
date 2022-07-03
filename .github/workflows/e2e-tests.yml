@@ -39,6 +39,7 @@ jobs:
         with:
           install: false
           wait-on: 'http://localhost:3000'
+          browser: chrome
 
       - name: upload video captures
         uses: actions/upload-artifact@v3
