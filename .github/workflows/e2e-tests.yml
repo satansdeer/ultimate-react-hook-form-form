@@ -34,8 +34,15 @@ jobs:
             node:${{ env.NODE_VERSION }}-alpine3.15 \
             yarn dev
 
-      - name: run Cypresss tests
+      - name: run Cypress tests
         uses: cypress-io/github-action@v4
         with:
           install: false
           wait-on: 'http://localhost:3000'
+
+      - name: upload video captures
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos
