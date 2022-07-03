@@ -33,5 +33,7 @@ jobs:
             node:${{ env.NODE_VERSION }}-alpine3.15 \
             yarn dev
 
-      - name: run Cypress tests
-        run: yarn e2e:run
+      - name: run Cypresss tests
+        uses: cypress-io/github-action@v4
+        with:
+          wait-on: 'http://localhost:3000'
