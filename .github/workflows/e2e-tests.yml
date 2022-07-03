@@ -28,6 +28,7 @@ jobs:
             --interactive --tty --rm --detach \
             --name ultimate-react-hook-form-form \
             --publish 3000:3000 \
+            --publish 4000:4000 \
             --volume "$PWD":/app \
             --workdir /app \
             node:${{ env.NODE_VERSION }}-alpine3.15 \
@@ -36,4 +37,5 @@ jobs:
       - name: run Cypresss tests
         uses: cypress-io/github-action@v4
         with:
+          install: false
           wait-on: 'http://localhost:3000'
