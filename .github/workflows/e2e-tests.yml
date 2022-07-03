@@ -2,7 +2,7 @@ name: e2e-tests
 
 on:
   push:
-    branches: [master, cypress-tests]
+    branches: [master]
   pull_request:
 
 env:
