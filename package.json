@@ -25,6 +25,7 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
+    "cypress": "^10.3.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.7-alpha.3",
     "morgan": "^1.10.0"
@@ -33,6 +34,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "e2e:run": "cypress run",
+    "e2e:open": "cypress open",
     "eject": "react-scripts eject",
     "start:server": "node ./server.js",
     "dev": "concurrently --kill-others \"npm run start:server\" \"npm run start\""
