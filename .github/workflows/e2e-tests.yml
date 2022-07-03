@@ -1,0 +1,37 @@
+name: e2e-tests
+
+on:
+  push:
+    branches: [master, cypress-tests]
+  pull_request:
+
+env:
+  NODE_VERSION: 16.15.1
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: yarn
+
+      - name: install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: run app in Docker
+        run: |
+          docker run \
+            --interactive --tty --rm --detach \
+            --name ultimate-react-hook-form-form \
+            --publish 3000:3000 \
+            --volume "$PWD":/app \
+            --workdir /app \
+            node:${{ env.NODE_VERSION }}-alpine3.15 \
+            yarn dev
+
+      - name: run Cypress tests
+        run: yarn e2e:run
