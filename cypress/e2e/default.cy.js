@@ -1,5 +1,5 @@
 describe('ultimate form', () => {
-  it('submits successfully', () => {
+  it('submits successfully with phone number', () => {
     cy.visit('/')
 
     // STEP 1
@@ -65,6 +65,29 @@ describe('ultimate form', () => {
     cy.get('[role=dialog]').within(() => {
       cy.get('h2').should('contain', 'Great job!')
       cy.contains('button', 'OK').click()
+    })
+  })
+
+  it('submits successfully without phone number', () => {
+    // STEP 1
+    cy.visit('/')
+    cy.get('#firstName').type('Maria')
+    cy.get('#lastName').type('Sanchez')
+    cy.get('button').click()
+
+    // STEP 2
+    cy.get('#email').type('maria@example.com')
+    cy.get('input[name=hasPhone]').uncheck()
+    cy.get('button').click()
+
+    // STEP 3 (skip)
+    cy.get('button').click()
+
+    // RESULTS
+    cy.get('table').within(() => {
+      cy.contains('td', 'Maria').should('exist')
+      cy.contains('td', 'Sanchez').should('exist')
+      cy.contains('td', 'maria@example.com').should('exist')
     })
   })
 })
